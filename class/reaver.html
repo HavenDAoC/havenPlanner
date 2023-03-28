@@ -9,9 +9,9 @@
     <link rel="icon" type="image/png" href="https://havendaoc.com/static/img/logo.png" sizes="32x32" />
     <link rel="stylesheet" media="screen" href="../css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_list.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_classes.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../javascripts/_js_override.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/_ra_list.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/_ra_classes.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/_js_override.js"></script>
     <script type="text/javascript">
         parts = location.href.split('?');
         classID = 35;
@@ -22,8 +22,8 @@
             calcSpec(1);
         });
     </script>
-    <script src="../javascripts/cbuilder2.js"></script>
-    <script src="../javascripts/classes/reaver.js"></script>
+    <script src="../js/cbuilder2.js"></script>
+    <script src="../js/classes/reaver.js"></script>
 
 </head>
 
@@ -116,22 +116,22 @@
                         <div class="input-block">
                             <h3 class="input-title">Current Level:</h3>
                             <span class="input-data"> 
-          <img onclick="bLevel(-1)" src="../images/minus.jpg" 
-              /><img onclick="bLevel(-5)" src="../images/minus.jpg"
+          <img onclick="bLevel(-1)" src="../img/minus.jpg"
+              /><img onclick="bLevel(-5)" src="../img/minus.jpg"
               /><input name="level" id="LEVEL" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50; calcSpec(this.value);" 
-              /><img src="../images/plus.jpg" onclick="bLevel(5)" border="0" 
-              /><img src="../images/plus.jpg" onclick="bLevel(1)" border="0" 
+              /><img src="../img/plus.jpg" onclick="bLevel(5)" border="0"
+              /><img src="../img/plus.jpg" onclick="bLevel(1)" border="0"
               />
           </span>
                         </div>
                         <div class="input-block">
                             <h3 class="input-title">Bonus Points:</h3>
                             <span class="input-data">  
-          <img onclick="bBonus(-1)" src="../images/minus.jpg" 
-             /><img style="" onclick="bBonus(-5)" src="../images/minus.jpg"
+          <img onclick="bBonus(-1)" src="../img/minus.jpg"
+             /><img style="" onclick="bBonus(-5)" src="../img/minus.jpg"
                   /><input name="BONUS" onchange="bBonus(0)" id="BONUS" type="text" class="ibox" value="0"
-                  /><img onclick="bBonus(5)" src="../images/plus.jpg"
-                  /><img onclick="bBonus(1)" src="../images/plus.jpg"
+                  /><img onclick="bBonus(5)" src="../img/plus.jpg"
+                  /><img onclick="bBonus(1)" src="../img/plus.jpg"
                   />
           </span>
                         </div>
@@ -246,43 +246,43 @@
                             <ul id="attributes">
                                 <li>POINTS<input class="input-attribute" disabled="disabled" type="text" id="BASE" name="StartPoints" value="30"></li>
                                 <li>
-                                    <a href="javascript:void(0)" onclick="bAttribute('STR',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat primary">STR</span><span class="primary"><sup>P</sup></span>
-                                    <a href="javascript:void(0)" onclick="bAttribute('STR',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <a href="javascript:void(0)" onclick="bAttribute('STR',-1)"><img src="../img/minus.jpg" border="0"></a><span class="stat primary">STR</span><span class="primary"><sup>P</sup></span>
+                                    <a href="javascript:void(0)" onclick="bAttribute('STR',1)"><img src="../img/plus.jpg" border="0"></a>
                                     <input type="text" id="STR" name="STR" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" onclick="bAttribute('CON',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">CON</span>
-                                    <a href="javascript:void(0)" onclick="bAttribute('CON',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <a href="javascript:void(0)" onclick="bAttribute('CON',-1)"><img src="../img/minus.jpg" border="0"></a><span class="stat ">CON</span>
+                                    <a href="javascript:void(0)" onclick="bAttribute('CON',1)"><img src="../img/plus.jpg" border="0"></a>
                                     <input type="text" id="CON" name="CON" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" onclick="bAttribute('DEX',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat secondary">DEX</span><span class="secondary"><sup>S</sup></span>
-                                    <a href="javascript:void(0)" onclick="bAttribute('DEX',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <a href="javascript:void(0)" onclick="bAttribute('DEX',-1)"><img src="../img/minus.jpg" border="0"></a><span class="stat secondary">DEX</span><span class="secondary"><sup>S</sup></span>
+                                    <a href="javascript:void(0)" onclick="bAttribute('DEX',1)"><img src="../img/plus.jpg" border="0"></a>
                                     <input type="text" id="DEX" name="DEX" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" onclick="bAttribute('QUI',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">QUI</span>
-                                    <a href="javascript:void(0)" onclick="bAttribute('QUI',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <a href="javascript:void(0)" onclick="bAttribute('QUI',-1)"><img src="../img/minus.jpg" border="0"></a><span class="stat ">QUI</span>
+                                    <a href="javascript:void(0)" onclick="bAttribute('QUI',1)"><img src="../img/plus.jpg" border="0"></a>
                                     <input type="text" id="QUI" name="QUI" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" onclick="bAttribute('INT',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">INT</sup></span>
-                                    <a href="javascript:void(0)" onclick="bAttribute('INT',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <a href="javascript:void(0)" onclick="bAttribute('INT',-1)"><img src="../img/minus.jpg" border="0"></a><span class="stat ">INT</sup></span>
+                                    <a href="javascript:void(0)" onclick="bAttribute('INT',1)"><img src="../img/plus.jpg" border="0"></a>
                                     <input type="text" id="INT" name="INT" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" onclick="bAttribute('PIE',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat tertiary">PIE</span><span class="tertiary"><sup>T</sup></span>
-                                    <a href="javascript:void(0)" onclick="bAttribute('PIE',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <a href="javascript:void(0)" onclick="bAttribute('PIE',-1)"><img src="../img/minus.jpg" border="0"></a><span class="stat tertiary">PIE</span><span class="tertiary"><sup>T</sup></span>
+                                    <a href="javascript:void(0)" onclick="bAttribute('PIE',1)"><img src="../img/plus.jpg" border="0"></a>
                                     <input type="text" id="PIE" name="PIE" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" onclick="bAttribute('EMP',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">EMP</sup></span>
-                                    <a href="javascript:void(0)" onclick="bAttribute('EMP',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <a href="javascript:void(0)" onclick="bAttribute('EMP',-1)"><img src="../img/minus.jpg" border="0"></a><span class="stat ">EMP</sup></span>
+                                    <a href="javascript:void(0)" onclick="bAttribute('EMP',1)"><img src="../img/plus.jpg" border="0"></a>
                                     <input type="text" id="EMP" name="EMP" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" onclick="bAttribute('CHA',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">CHA</span>
-                                    <a href="javascript:void(0)" onclick="bAttribute('CHA',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <a href="javascript:void(0)" onclick="bAttribute('CHA',-1)"><img src="../img/minus.jpg" border="0"></a><span class="stat ">CHA</span>
+                                    <a href="javascript:void(0)" onclick="bAttribute('CHA',1)"><img src="../img/plus.jpg" border="0"></a>
                                     <input type="text" id="CHA" name="CHA" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
                                 </li>
                             </ul>
@@ -296,11 +296,11 @@
                                         <!-- 
            --><span class="skill-spec">&nbsp; 
                 Spec: 
-                <img onclick="bSkill(181,-1)" src="../images/minus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(181,-5)" src="../images/minus.jpg" align="absmiddle"
+                <img onclick="bSkill(181,-1)" src="../img/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(181,-5)" src="../img/minus.jpg" align="absmiddle"
                   /><input name="SKILL181" id="SKILL181" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(181,0);"
-                  /><img onclick="bSkill(181,5)" src="../images/plus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(181,1)" src="../images/plus.jpg" align="absmiddle" />
+                  /><img onclick="bSkill(181,5)" src="../img/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(181,1)" src="../img/plus.jpg" align="absmiddle" />
                 </span>
                                         <!-- 
            --><span class="skill-cost">&nbspCost: <span id="COST181">2</span></span>
@@ -538,11 +538,11 @@
                                         <!-- 
             --><span class="skill-spec">
                 Spec: 
-                <img onclick="bSkill(107,-1)" src="../images/minus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(107,-5)" src="../images/minus.jpg" align="absmiddle"
+                <img onclick="bSkill(107,-1)" src="../img/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(107,-5)" src="../img/minus.jpg" align="absmiddle"
                   /><input name="SKILL107" id="SKILL107" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(107,0);"
-                  /><img onclick="bSkill(107,5)" src="../images/plus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(107,1)" src="../images/plus.jpg" align="absmiddle" />
+                  /><img onclick="bSkill(107,5)" src="../img/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(107,1)" src="../img/plus.jpg" align="absmiddle" />
                 </span>
                                         <!-- 
             --><span class="skill-cost">Cost: <span id="COST107">2</span></span>
@@ -561,11 +561,11 @@
                                         <!-- 
             --><span class="skill-spec">
                 Spec: 
-                <img onclick="bSkill(85,-1)" src="../images/minus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(85,-5)" src="../images/minus.jpg" align="absmiddle"
+                <img onclick="bSkill(85,-1)" src="../img/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(85,-5)" src="../img/minus.jpg" align="absmiddle"
                   /><input name="SKILL85" id="SKILL85" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(85,0);"
-                  /><img onclick="bSkill(85,5)" src="../images/plus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(85,1)" src="../images/plus.jpg" align="absmiddle" />
+                  /><img onclick="bSkill(85,5)" src="../img/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(85,1)" src="../img/plus.jpg" align="absmiddle" />
                 </span>
                                         <!-- 
             --><span class="skill-cost">Cost: <span id="COST85">2</span></span>
@@ -602,11 +602,11 @@
                                     <!-- 
             --><span class="skill-spec">
                 Spec: 
-                <img onclick="bSkill(87,-1)" src="../images/minus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(87,-5)" src="../images/minus.jpg" align="absmiddle"
+                <img onclick="bSkill(87,-1)" src="../img/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(87,-5)" src="../img/minus.jpg" align="absmiddle"
                   /><input name="SKILL87" id="SKILL87" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(87,0);"
-                  /><img onclick="bSkill(87,5)" src="../images/plus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(87,1)" src="../images/plus.jpg" align="absmiddle" />
+                  /><img onclick="bSkill(87,5)" src="../img/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(87,1)" src="../img/plus.jpg" align="absmiddle" />
                 </span>
                                     <!-- 
             --><span class="skill-cost">Cost: <span id="COST87">2</span></span>
@@ -643,11 +643,11 @@
                                     <!-- 
             --><span class="skill-spec">
                 Spec: 
-                <img onclick="bSkill(89,-1)" src="../images/minus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(89,-5)" src="../images/minus.jpg" align="absmiddle"
+                <img onclick="bSkill(89,-1)" src="../img/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(89,-5)" src="../img/minus.jpg" align="absmiddle"
                   /><input name="SKILL89" id="SKILL89" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(89,0);"
-                  /><img onclick="bSkill(89,5)" src="../images/plus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(89,1)" src="../images/plus.jpg" align="absmiddle" />
+                  /><img onclick="bSkill(89,5)" src="../img/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(89,1)" src="../img/plus.jpg" align="absmiddle" />
                 </span>
                                     <!-- 
             --><span class="skill-cost">Cost: <span id="COST89">2</span></span>
@@ -684,11 +684,11 @@
                                     <!-- 
             --><span class="skill-spec">
                 Spec: 
-                <img onclick="bSkill(97,-1)" src="../images/minus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(97,-5)" src="../images/minus.jpg" align="absmiddle"
+                <img onclick="bSkill(97,-1)" src="../img/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(97,-5)" src="../img/minus.jpg" align="absmiddle"
                   /><input name="SKILL97" id="SKILL97" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(97,0);"
-                  /><img onclick="bSkill(97,5)" src="../images/plus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(97,1)" src="../images/plus.jpg" align="absmiddle" />
+                  /><img onclick="bSkill(97,5)" src="../img/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(97,1)" src="../img/plus.jpg" align="absmiddle" />
                 </span>
                                     <!-- 
             --><span class="skill-cost">Cost: <span id="COST97">2</span></span>
@@ -725,11 +725,11 @@
                                     <!-- 
             --><span class="skill-spec">
                 Spec: 
-                <img onclick="bSkill(167,-1)" src="../images/minus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(167,-5)" src="../images/minus.jpg" align="absmiddle"
+                <img onclick="bSkill(167,-1)" src="../img/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(167,-5)" src="../img/minus.jpg" align="absmiddle"
                   /><input name="SKILL167" id="SKILL167" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(167,0);"
-                  /><img onclick="bSkill(167,5)" src="../images/plus.jpg" align="absmiddle"
-                  /><img onclick="bSkill(167,1)" src="../images/plus.jpg" align="absmiddle" />
+                  /><img onclick="bSkill(167,5)" src="../img/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(167,1)" src="../img/plus.jpg" align="absmiddle" />
                 </span>
                                     <!-- 
             --><span class="skill-cost">Cost: <span id="COST167">2</span></span>
@@ -784,13 +784,13 @@
                             </td>
                             <td class="unique">Realm Rank</td>
                             <td width="30%" align="left">&nbsp;&nbsp;<input name="frmrank" type="textbox" class="frmtext" size="3" value=1 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;
-                                <a href="javascript:void(0)" onclick="incRR();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;
-                                <a href="javascript:decRR();" class="red"><img src="../images/minus.jpg" border="0"></a>
+                                <a href="javascript:void(0)" onclick="incRR();" class="set"><img src="../img/plus.jpg" border="0"></a>&nbsp;&nbsp;
+                                <a href="javascript:decRR();" class="red"><img src="../img/minus.jpg" border="0"></a>
                             </td>
                             <td class="unique">Realm Level</td>
                             <td width="30%" align="left">&nbsp;&nbsp;<input name="frmlevel" type="textbox" class="frmtext" size="3" value=0 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;
-                                <a href="javascript:void(0)" onclick="incRL();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;
-                                <a href="javascript:decRL();" class="red"><img src="../images/minus.jpg" border="0"></a>
+                                <a href="javascript:void(0)" onclick="incRL();" class="set"><img src="../img/plus.jpg" border="0"></a>&nbsp;&nbsp;
+                                <a href="javascript:decRL();" class="red"><img src="../img/minus.jpg" border="0"></a>
                             </td>
                         </tr>
                         <tr>
@@ -808,9 +808,9 @@
 <script language="javascript" src="_js_showskills.js"></script>
 <script language="javascript" src="_js_checks.js"></script>
 <script language="javascript" src="_js_display.js"></script>-->
-                    <script language="javascript" src="../javascripts/_js_showskills.js"></script>
-                    <script language="javascript" src="../javascripts/_js_checks.js"></script>
-                    <script language="javascript" src="../javascripts/_js_display.js"></script>
+                    <script language="javascript" src="../js/_js_showskills.js"></script>
+                    <script language="javascript" src="../js/_js_checks.js"></script>
+                    <script language="javascript" src="../js/_js_display.js"></script>
                 </form>
 
 

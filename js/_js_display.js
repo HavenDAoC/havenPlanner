@@ -17,8 +17,8 @@
 		document.write("<tr>");
 		document.write("<td align='center'><input readonly='readonly' name='frm"+raID+"' class='frmtext2' size='2' value='"+arrData[raID].level+"'>");
 		
-		document.write("&nbsp;&nbsp;<a href='javascript:void(0)' onclick='decRA("+raID+");'><img src='../images/minus.jpg' border='0'></a>");
-		document.write("&nbsp;&nbsp;<a href='javascript:void(0)' onclick='incRA("+raID+");'><img src='../images/plus.jpg' border='0'></a></td>");
+		document.write("&nbsp;&nbsp;<a href='javascript:void(0)' onclick='decRA("+raID+");'><img src='../img/minus.jpg' border='0'></a>");
+		document.write("&nbsp;&nbsp;<a href='javascript:void(0)' onclick='incRA("+raID+");'><img src='../img/plus.jpg' border='0'></a></td>");
 		if (arrData[raID].indent)	{document.write("<td>&nbsp;&nbsp;&nbsp;&nbsp;"+arrData[raID].name+"</td>");}
 		else {document.write("<td class='grey'><b>"+arrData[raID].name+"</b></td>");}
 		document.write("<td align='center'>"+arrData[raID].type+"</td>");

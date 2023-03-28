@@ -1,6 +1,6 @@
 body {
     font: 100% Verdana, Arial, Helvetica, sans-serif;
-    background: url("../images/HavenWPNoLogo-min.jpg") no-repeat center center fixed;
+    background: url("../img/HavenWPNoLogo-min.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -18,7 +18,7 @@ h1 {
     -khtml-border-radius: 10px;
     -webkit-border-radius: 10px;
     border: 1px solid #282828;
-    background: url('../images/menu_bg.gif');
+    background: url('../img/menu_bg.gif');
     margin: 0;
     padding: 10px;
     color: #bc9000;
@@ -78,7 +78,7 @@ sup {
     border: 1px inset #282828;
     width: 310px;
     padding: 5px;
-    background: url('../images/menu_bg.gif') top left;
+    background: url('../img/menu_bg.gif') top left;
 }
 
 
@@ -118,14 +118,14 @@ h3.not-implemented {
 a.class-link {
     display: block;
     text-decoration: none;
-    background: url('../images/menu_item.gif');
+    background: url('../img/menu_item.gif');
     background-size: cover;
     color: #c90;
 }
 
 a.class-link:hover {
     background-color: darkgray;
-    background: url('../images/menu_item_hover.gif');
+    background: url('../img/menu_item_hover.gif');
     background-size: cover;
     color: white;
 }
@@ -140,7 +140,7 @@ div.cbuilderHeader {
     -khtml-border-radius: 5px;
     -webkit-border-radius: 5px;
     margin: 0 auto;
-    background: url('../images/menu_bg.gif') top left;
+    background: url('../img/menu_bg.gif') top left;
 }
 
 .cbuilderHeader {
@@ -177,7 +177,7 @@ h2.builder {
     color: white;
     margin: 0;
     padding: 1px 15px;
-    background: url('../images/bg-item.png') top left;
+    background: url('../img/bg-item.png') top left;
 }
 
 #autotrain th {
@@ -190,7 +190,7 @@ h2.builder {
 }
 
 #autotrain tr:hover td {
-    background: url('../images/bg-item-hover.png') top left;
+    background: url('../img/bg-item-hover.png') top left;
 }
 
 #autotrain tr.autotrain-level td,
@@ -223,12 +223,12 @@ h2.builder {
     text-align: center;
     cursor: pointer;
     background-color: darkgray;
-    background: url('../images/menu_item.gif');
+    background: url('../img/menu_item.gif');
     color: #c90;
 }
 
 .tab-item:hover {
-    background: url('../images/menu_item_hover.gif');
+    background: url('../img/menu_item_hover.gif');
     color: white;
 }
 
@@ -248,7 +248,7 @@ h2.builder {
     vertical-align: top;
     border: 1px inset #313131;
     padding: 3px;
-    background: url('../images/content.jpg') top left;
+    background: url('../img/content.jpg') top left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -558,7 +558,7 @@ ul {
   }
 
 .menu {
-    background: url('../images/menu_bg.gif');
+    background: url('../img/menu_bg.gif');
     -moz-border-radius: 10px;
     border-radius: 10px;
     -khtml-border-radius: 10px;
