@@ -87,42 +87,42 @@ function clear() {
  * @param lvl The spell level.
  * @param line The spell line the spell belongs to (base or spec).
  * @param ability The ID associated with the spell (if a castable ability, like Taunt).
- * @param desc The description of the spell.
+ * @param info The description of the spell.
  * @param skill The ID associated with the specialization line (base or spec).
  * @param power The power requirement for casting the spell.
  * @param range The maximum range in units that the spell may be cast.
  * @param cast The cast time (in seconds) required to perform the spell.
- * @param radius The radius or area of effect (AoE) of the spell, if it is not single target.
+ * @param area The radius or area of effect (AoE) of the spell, if it is not single target.
  * @param recast The reuse timer (in seconds) for how often the spell may be cast.
  * @param duration The duration (in seconds) by which the spell's effect(s) remain active.
- * @param dmgType The damage type associated with the spell.
+ * @param type The damage type associated with the spell.
  */
-function spellPT(name, lvl, line, ability, desc, skill, power, range, cast, radius, recast, duration, dmgType) {
+function spellPT(name, lvl, line, ability, info, skill, power, range, cast, area, recast, duration, type) {
     this.name = name
     this.lvl = lvl
     this.line = line
     this.ability = ability
-    this.desc = desc
+    this.info = info
     this.skill = skill
     this.power = power
     this.range = range
     this.cast = cast
-    this.radius = radius
+    this.area = area
     this.recast = recast
     this.duration = duration
-    this.dmgType = dmgType
+    this.type = type
 }
 
 /**
  * Sets the standard parameters and values for a spell line (spells with multiple versions of itself).
  * @param name The name of the spell line.
- * @param desc The description of the spell line.
+ * @param description The description of the spell line.
  * @param ability The ID associated with the spell ability, which will associate all spells of the same line together.
  * @param current Specifies (as a bool) whether the spell line has been interacted with by the cursor.
  */
-function linePT(name, desc, ability, current) {
+function linePT(name, description, ability, current) {
     this.name = name
-    this.desc = desc
+    this.description = description
     this.ability = ability
     this.current = current
 }
