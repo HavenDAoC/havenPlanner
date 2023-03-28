@@ -1,0 +1,13 @@
+/*! ************************************************************************
+DAOC CHARACTER BUILDER - A static website for planning DAoC character specs
+
+This website is based upon the Uthgard Character Builder, designed originally
+by genuapp at http://www.genuapp.appspot.com/char/index.html.
+
+It has been modified from its original code to suit the purposes of the
+HavenDAoC open source project.
+
+Please note that this is a work-in-progress and available for free distribution
+on an "as-is" basis, without warranties or conditions of any kind, expressed
+or implied.
+************************************************************************* */
